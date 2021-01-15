@@ -1,6 +1,5 @@
 function equacaofinal(a, b, c) {
         modal.style.display = "block";
-       
       
     a = parseInt(document.getElementById("a").value);
 
@@ -12,8 +11,10 @@ function equacaofinal(a, b, c) {
         document.getElementById("resul").innerHTML = "O Valor de x1 é: " + x1(a, b, delta(a, b, c))
         document.getElementById("val b").innerHTML = "O Valor de x2 é: " + x2(a, b, delta(a, b, c))
         document.getElementById("val h").innerHTML = "O Valor de delta é: " + delta(a,b,c)
+        
     } else {
         alert("O delta é negativo ou o os valores não foram definidos")
+        modal.style.display = "none";
     }
 
     function delta(a, b, c) {
